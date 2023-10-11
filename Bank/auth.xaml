@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bank.authreg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="279" Width="329" Icon="/solar.png">
+    <Grid Height="269" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="417*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="login" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25" Grid.ColumnSpan="4" Grid.Row="1" TextChanged="login_TextChanged"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25" Grid.ColumnSpan="4" Grid.Row="1"/>
+        <Label Content="Введите логин" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.ColumnSpan="4" Grid.Row="1" Height="29"/>
+        <Label Content="Введите пароль" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.ColumnSpan="4" Grid.Row="1" Height="29"/>
+        <Button x:Name="aut" Content="Войти" HorizontalAlignment="Left" Margin="217,175,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59" Height="27" Click="Button_Click_1"/>
+        <Button x:Name="reg" Content="Регистрация" HorizontalAlignment="Left" Margin="10,175,0,0" Grid.Row="1" VerticalAlignment="Top" Width="80" Height="27" Click="reg_Click"/>
+        <Button Content="Для солара" HorizontalAlignment="Left" Margin="237,5,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Width="67" Click="Button_Click"/>
+
+    </Grid>
+</Window>

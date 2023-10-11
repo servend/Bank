@@ -1,0 +1,48 @@
+﻿<Window x:Name="main" x:Class="Bank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Банк солера" Height="282" Width="615" Initialized="main_Initialized" Icon="/solar.png" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="147*"/>
+            <RowDefinition Height="163*"/>
+        </Grid.RowDefinitions>
+        <TabControl Margin="0,0,0,10" Grid.RowSpan="2">
+            <TabItem Header="Личный кабинет">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="login" Content="login" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="145"/>
+                    <Label x:Name="rub" Content="0" HorizontalAlignment="Left" Margin="409,41,0,0" VerticalAlignment="Top" Width="82"/>
+                    <Label Content="Сумма в рублях" HorizontalAlignment="Left" Margin="409,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.607,0.283" Width="104"/>
+                    <Label x:Name="dol" Content="0" HorizontalAlignment="Left" Margin="409,117,0,0" VerticalAlignment="Top" Width="82"/>
+                    <Label Content="Сумма в долларах" HorizontalAlignment="Left" Margin="409,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.607,0.283" Width="116"/>
+                    <Label x:Name="age" Content="00" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+                    <Label Content="лет" HorizontalAlignment="Left" Margin="40,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.228,2.188"/>
+                    <Label Content="Ваш логин" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Вам логин" HorizontalAlignment="Left" Margin="0,63,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Ваш ID" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.219,0.692"/>
+                    <Label x:Name="ID" Content="0" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="money" Content="Пополнить счет" HorizontalAlignment="Left" Margin="433,154,0,0" VerticalAlignment="Top" Click="money_Click"/>
+                    <Image HorizontalAlignment="Left" Height="100" Margin="97,23,0,0" VerticalAlignment="Top" Width="100" Source="/sol.jpg"/>
+                    <Label Content="Ваше фото" HorizontalAlignment="Left" Margin="97,-3,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Перевод денег">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Перевести" HorizontalAlignment="Left" Margin="523,180,0,0" VerticalAlignment="Top" FontSize="14" Click="Button_Click_1"/>
+                    <Label Content="Введите ID:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Введите сумму которую хотите перевести:" HorizontalAlignment="Left" Margin="267,5,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Рубли" HorizontalAlignment="Left" Margin="267,36,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Доллары" HorizontalAlignment="Left" Margin="506,36,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="rubtxt" HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+                    <TextBox x:Name="doltxt" HorizontalAlignment="Left" Margin="465,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+                    <TextBox x:Name="idtxt" HorizontalAlignment="Left" Margin="0,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Bank.reg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="322" Icon="/solar.png">
+    <Grid>
+        <TextBox x:Name="fiotxt" HorizontalAlignment="Left" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" FontSize="14"/>
+        <TextBox x:Name="passtxt" HorizontalAlignment="Left" Margin="10,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Button x:Name="regb" Content="Регистрация" HorizontalAlignment="Left" Margin="220,376,0,0" VerticalAlignment="Top" Height="30" Width="88" FontSize="14" Click="regb_Click"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <TextBox x:Name="agetxt" HorizontalAlignment="Left" Margin="10,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Сколько вам лет" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="14" Width="120"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Bank.money"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Пополнение счета" Height="294" Width="617" Icon="/solar.png">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Введите номер карты:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="155" FontSize="14"/>
+        <Label Content="Введите сумму в рублях:" HorizontalAlignment="Left" Margin="214,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Введите сумму в долларах:" HorizontalAlignment="Left" Margin="416,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="card" HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="24" Text="0"/>
+        <TextBox x:Name="rubtxt" HorizontalAlignment="Left" Margin="214,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="24"/>
+        <TextBox x:Name="doltxt" HorizontalAlignment="Left" Margin="416,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="24"/>
+        <Button x:Name="Pay" Content="Пополнить счет" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" FontSize="14" Width="112" Click="Pay_Click"/>
+        <Image HorizontalAlignment="Left" Height="122" Margin="0,130,0,0" VerticalAlignment="Top" Width="216" Source="/Stonks-Fortnite.jpg"/>
+    </Grid>
+</Window>

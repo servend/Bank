@@ -1,0 +1,22 @@
+﻿<Window x:Class="Bank.SOLAR"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="SOLAR" Height="711" Width="968">
+    <Grid>
+        <DataGrid x:Name="datagrid" d:ItemsSource="{Binding}" Margin="329,234,229,311" FontSize="14" AutoGenerateColumns="False" Height="150" MinColumnWidth="67" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="ID"/> 
+                <DataGridTextColumn x:Name="login"/>
+                <DataGridTextColumn x:Name="pass"/>
+                <DataGridTextColumn x:Name="age"/>
+                <DataGridTextColumn x:Name="rub"/>
+                <DataGridTextColumn x:Name="dol"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
